@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2> Tech Review Types </h2>
+<table class="table">
+    <tr>Name</th>
+    <th>Description</th>
+
+</tr>
+{% for t in types_list %}
+<tr>
+    <td>{{t.typename}}</td>
+    <td>{{t.typedescription}}</td>
+
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}
